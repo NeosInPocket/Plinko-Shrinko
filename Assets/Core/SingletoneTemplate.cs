@@ -22,16 +22,23 @@ public class SingletoneTemplate<T> where T : MonoBehaviour
 		}
 	}
 
-	protected virtual void Awake()
+	public void Initialize()
 	{
 		if (instance == null)
 		{
-			instance = this as T;
+			GameObject obj = new GameObject();
+			obj.name = typeof(T).Name;
+			instance = obj.AddComponent<T>();
+
 			GameObject.DontDestroyOnLoad(instance.gameObject);
 		}
 		else
 		{
 			GameObject.Destroy(instance.gameObject);
 		}
+
+		SecondaryInitialize();
 	}
+
+	protected virtual void SecondaryInitialize() { }
 }
