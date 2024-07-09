@@ -23,13 +23,13 @@ public class DataAccessorSingleTone : SingletoneTemplate<DataAccessor>
 		}
 		else
 		{
-			Instance.Level = PlayerPrefs.GetInt("Level", 404);
-			Instance.Crystals = PlayerPrefs.GetInt("Crystals", 404);
-			Instance.Shield = PlayerPrefs.GetInt("Shield", 404);
-			Instance.Horn = PlayerPrefs.GetInt("Horn", 404);
-			Instance.Music = PlayerPrefs.GetFloat("Music", 1f);
-			Instance.Effect = PlayerPrefs.GetFloat("Effect", 1f);
-			Instance.Manual = PlayerPrefs.GetInt("Manual", 404);
+			Instance.Level = PlayerPrefs.GetInt("Level", gameSettings.defaultLevel);
+			Instance.Crystals = PlayerPrefs.GetInt("Crystals", gameSettings.defaultCrystals);
+			Instance.Shield = PlayerPrefs.GetInt("Shield", gameSettings.defaultShield);
+			Instance.Horn = PlayerPrefs.GetInt("Horn", gameSettings.defaultHorn);
+			Instance.Music = PlayerPrefs.GetFloat("Music", gameSettings.defaultMusic);
+			Instance.Effect = PlayerPrefs.GetFloat("Effect", gameSettings.defaultEffect);
+			Instance.Manual = PlayerPrefs.GetInt("Manual", gameSettings.defaultManual);
 		}
 	}
 }

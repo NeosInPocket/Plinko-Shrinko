@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Idfa/Context Screen Sample.unity
+    guid: a2154acf9dc1c46e5a8df649580ad6b9
+  - enabled: 1
     path: Assets/Scenes/Plopetnisled.unity
     guid: 902806ccef946474d90bcceec43217c6
   - enabled: 1

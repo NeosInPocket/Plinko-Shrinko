@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82069ff082402694d891c48954ff0933, type: 3}
   m_Name: GameSettings
   m_EditorClassIdentifier: 
-  reloadSettings: 0
+  reloadSettings: 1
   defaultLevel: 1
-  defaultCrystals: 50
+  defaultCrystals: 150
   defaultShield: 1
   defaultHorn: 0
   defaultMusic: 1

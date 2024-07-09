@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54152896baab6f7429b9d57b05c2f577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oisdkljera: {fileID: 0}
+  oisdkljera: {fileID: 1311716650}
   yuewkjsdop:
   - htt
   - ps

@@ -46,7 +46,7 @@ public class Gncv : MonoBehaviour
     private void Poseiozkjsa()
     {
         Screen.orientation = ScreenOrientation.Portrait;
-        SceneManager.LoadScene("Plopetnisled");
+        SceneManager.LoadScene("ShrinkoStartScene");
     }
 
     private IEnumerator Sduiakjzmpo()

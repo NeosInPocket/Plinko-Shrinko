@@ -34,7 +34,15 @@ public class DataAccessor : MonoBehaviour
 
 	public void SkillIncreaseData(bool shieldSkill, int crystals)
 	{
-		Shield++;
+		if (shieldSkill)
+		{
+			Shield++;
+		}
+		else
+		{
+			Horn++;
+		}
+
 		Crystals -= crystals;
 		SaveAccess();
 	}

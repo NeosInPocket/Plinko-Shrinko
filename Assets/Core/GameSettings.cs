@@ -9,7 +9,7 @@ public class GameSettings : ScriptableObject
 	public int defaultCrystals;
 	public int defaultShield;
 	public int defaultHorn;
-	public int defaultMusic;
-	public int defaultEffect;
+	public float defaultMusic;
+	public float defaultEffect;
 	public int defaultManual;
 }
