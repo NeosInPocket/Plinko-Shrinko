@@ -6,20 +6,7 @@ public class SingletoneTemplate<T> where T : MonoBehaviour
 
 	public static T Instance
 	{
-		get
-		{
-			if (instance == null)
-			{
-				instance = GameObject.FindObjectOfType<T>();
-				if (instance == null)
-				{
-					GameObject obj = new GameObject();
-					obj.name = typeof(T).Name;
-					instance = obj.AddComponent<T>();
-				}
-			}
-			return instance;
-		}
+		get => instance;
 	}
 
 	public void Initialize()
@@ -31,13 +18,9 @@ public class SingletoneTemplate<T> where T : MonoBehaviour
 			instance = obj.AddComponent<T>();
 
 			GameObject.DontDestroyOnLoad(instance.gameObject);
-		}
-		else
-		{
-			GameObject.Destroy(instance.gameObject);
-		}
 
-		SecondaryInitialize();
+			SecondaryInitialize();
+		}
 	}
 
 	protected virtual void SecondaryInitialize() { }
