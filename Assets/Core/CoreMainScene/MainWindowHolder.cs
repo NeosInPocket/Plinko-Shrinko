@@ -1,18 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class MainWindowHolder : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	[SerializeField] private TMP_Text mainCrystals;
+	[SerializeField] private TMP_Text mainLevel;
+	[SerializeField] private Animator mainAnimator;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private void Start()
+	{
+		ReleaseCrystals();
+	}
+
+	public void ReleaseCrystals()
+	{
+		mainCrystals.text = DataAccessorSingleTone.Instance.Crystals.ToString();
+		mainLevel.text = "LEVEL " + DataAccessorSingleTone.Instance.Level.ToString();
+	}
+
+	public void SetAnimatorTrigger(string trigger)
+	{
+		mainAnimator.SetTrigger(trigger);
+	}
 }

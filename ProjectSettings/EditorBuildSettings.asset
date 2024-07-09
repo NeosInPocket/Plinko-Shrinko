@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ShrinkoStartScene.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Scenes/MainGameActionsScene.unity
+    guid: b28006fd5b6f2b64fa80a17db081f23c
   m_configObjects: {}
